@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Descubre Guachucal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="webgl-bg"></div><div class="grain"></div><div class="water-glow"></div>
+<header id="header">
+<a class="logo" href="#top" aria-label="Inicio"><img src="assets/logo.png" alt="Descubre Guachucal"></a>
+<nav>
+<button class="active" data-cat="nature">NATURALEZA Y PAISAJES <b>01</b></button>
+<button data-cat="stay">ALOJAMIENTO <b>02</b></button>
+<button data-cat="local">PRODUCTOS LOCALES <b>03</b></button>
+</nav>
+<a class="contact-top" href="#contact">CONTACTO</a>
+<button id="menuBtn" class="menu-pill" type="button">MENU</button>
+</header>
+
+<main id="top">
+<section class="hero" id="hero">
+<div class="hero-bg"><img id="heroImage" alt=""></div><div class="shade"></div>
+<div class="copy">
+<div class="eyebrow">NARIÑO · COLOMBIA</div><div class="num" id="heroNum">01</div>
+<h1 id="heroTitle">Descubre<br>Guachucal</h1><p id="heroDesc"></p><small id="heroLoc"></small>
+<button id="explore" type="button">EXPLORAR LUGAR <i>↗</i></button>
+</div>
+<div class="cards">
+<div class="cards-head"><span id="catName">NATURALEZA Y PAISAJES</span><span id="counter">01 / 06</span></div>
+<div class="viewport"><div id="track"></div></div>
+<div class="controls"><button id="prev" aria-label="Anterior">←</button><button id="next" aria-label="Siguiente">→</button><span><i id="progress"></i></span></div>
+<div class="drag-hint">ARRASTRA · DESLIZA · EXPLORA</div>
+</div>
+</section>
+
+<section class="intro">
+<div class="intro-text"><div class="eyebrow">GUACHUCAL · NARIÑO</div><div><h2>Un lugar para<br><em>conocer, explorar</em><br>y disfrutar.</h2><p>Déjate sorprender por los hermosos paisajes, la naturaleza, las tradiciones y los sabores de Guachucal, Nariño. Conoce lugares especiales, apoya los emprendimientos locales y disfruta experiencias que te conectan con la esencia de nuestra tierra.</p><p>¡Guachucal te espera con mucho por conocer y disfrutar!</p></div></div>
+<figure class="intro-img"><img src="assets/guachucal.jpg" alt="Paisajes de Guachucal, Nariño"></figure>
+</section>
+<section id="contact" class="contact"><div><div class="eyebrow">¿QUIERES SABER MÁS?</div><h2>Guachucal<br><em>te espera.</em></h2></div><div class="contact-card"><label>CONTACTO</label><a id="email" href="#"><img src="assets/icon-email.png" alt="" class="c-ico"><span></span></a><a id="whatsapp" href="#" target="_blank" rel="noopener"><img src="assets/icon-whatsapp.png" alt="" class="c-ico"><span></span></a><p>Información, experiencias, alojamientos y productos locales.</p></div></section>
+</main>
+<footer><strong>GUACHUCAL</strong><span>Naturaleza · Cultura · Territorio</span><small>© <b id="year"></b> Guachucal Turismo</small></footer>
+
+<div id="detail" aria-hidden="true"><button id="detailClose" type="button" aria-label="Cerrar"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 5L19 19M19 5L5 19" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><div class="detail-scroll" id="detailScroll"><div class="detail-hero"><div class="detail-photo"><img id="detailImage" alt=""></div><div class="detail-shade"></div><div class="detail-content"><div class="eyebrow" id="detailCat"></div><div class="detail-num" id="detailNum"></div><h2 id="detailTitle"></h2><div class="detail-location" id="detailLoc"></div><p id="detailDesc"></p><a id="detailGo" class="go-btn" href="#" target="_blank" rel="noopener"><span>¡GO!</span><i>↗</i></a></div><div class="scroll-hint" id="scrollHint">DESLIZA PARA VER LA GALERÍA ↓</div></div><section class="gallery" id="detailGallery"><div class="eyebrow">GALERÍA</div><h3 id="galleryTitle"></h3><div class="gallery-grid" id="galleryGrid"></div></section></div></div>
+
+<div id="mobileMenu" aria-hidden="true"><div class="mobile-inner"><button id="menuClose" class="menu-pill menu-close" type="button">CERRAR</button><div class="mobile-top"><span>EXPLORAR</span><span>GUACHUCAL · NARIÑO</span></div><div class="mobile-links"><button data-cat="nature">Naturaleza<br><em>y paisajes</em></button><button data-cat="stay">Alojamiento</button><button data-cat="local">Productos<br><em>locales</em></button></div><a href="#contact" id="mobileContact">Contacto ↗</a></div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script><script src="content.js"></script><script src="script.js"></script>
+</body></html>
